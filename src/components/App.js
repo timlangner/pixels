@@ -1,9 +1,10 @@
-import './App.css';
+import Editor from './editor/Editor';
+import './App.scss';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-
+      <Editor />
     </div>
   );
 }
