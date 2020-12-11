@@ -1,6 +1,6 @@
-import React, { useRef } from "react"
-import "../styles/drawingPanel.scss"
-import Row from "./Row"
+import React, { useRef } from "react";
+import "./drawingPanel.scss";
+import Row from "./row/Row";
 
 export default function DrawingPanel(props) {
     const { width, height, selectedColor } = props

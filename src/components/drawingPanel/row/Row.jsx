@@ -1,6 +1,6 @@
 import React from "react"
+import Pixel from "../pixel/Pixel";
 import "./row.scss"
-import Pixel from "./Pixel"
 
 export default function Row(props) {
     const { width, selectedColor } = props

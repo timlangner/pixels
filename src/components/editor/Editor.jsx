@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {CirclePicker} from "react-color";
-import DrawingPanel from '../drawingPanel/drawingPanel';
+import DrawingPanel from "../drawingPanel/DrawingPanel";
 import './editor.scss';
 
 const Editor = () => {
