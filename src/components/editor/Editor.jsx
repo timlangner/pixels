@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './editor.scss';
+import {CirclePicker} from "react-color";
 
 const Editor = () => {
     const [panelWidth, setPanelWidth] = useState(16)
@@ -16,6 +17,10 @@ const Editor = () => {
         buttonText === "start drawing"
             ? setButtonText("reset")
             : setButtonText("start drawing")
+    }
+
+    function changeColor(color) {
+        setColor(color.hex)
     }
 
     return (
@@ -51,6 +56,9 @@ const Editor = () => {
             <button onClick={initializeDrawingPanel} className="button">
                 {buttonText}
             </button>
+            {hideOptions && (
+                <CirclePicker color={selectedColor} onChangeComplete={changeColor} />
+            )}
         </div>
     )
 };
